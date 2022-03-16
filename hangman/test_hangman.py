@@ -39,3 +39,7 @@ def test_mask_word_single_letter():
     guesses = ["l"]
     ret = hangman.mask_word(secret_word,guesses)
     assert ret == "-l------"
+def test_mask_word_multiple_letters():
+    secret_word = "elephant"
+    guesses = ["p","a","x"]
+    ret = hangman.mask_word(secret_word,guesses)
